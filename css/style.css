@@ -1,11 +1,35 @@
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 html {
   height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 body {
   height: 100%;
   /*color: #fff;*/
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+h1 {
+  font-size: 2.2rem;
+  color: #1f7f9e;
+  margin-bottom: .4rem;
+  border-bottom: 1px solid #819090;
+  padding-top: 10px;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 100%;
+  margin: 20px 0 0 0;
+  color: #BD3613;
+}
+h3 {
+  font-size: 1.8rem;
+  line-height: 60%;
+  color: #BD3613;
 }
 a,
 a:focus,
@@ -69,14 +93,9 @@ a:hover {
   border-bottom-color: #a9a9a9;
   border-bottom-color: rgba(255, 255, 255, 0.25);
 }
-.masthead-nav .active a:focus,
-.masthead-nav .active a:hover {
-  color: #fff;
-  border-bottom-color: #fff;
-}
 .masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
+.masthead-nav > .active > a:focus,
+.masthead-nav > .active > a:hover {
   color: #fff;
   border-bottom-color: #fff;
 }
@@ -88,9 +107,6 @@ a:hover {
     float: right;
   }
 }
-/*
- * Cover
- */
 .cover {
   padding: 0 20px;
 }
@@ -98,17 +114,11 @@ a:hover {
   padding: 10px 20px;
   font-weight: bold;
 }
-/*
- * Footer
- */
 .mastfoot {
   color: #999;
   /* IE8 proofing */
   color: rgba(255, 255, 255, 0.5);
 }
-/*
- * Affix and center
- */
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -137,14 +147,6 @@ a:hover {
   .cover-container {
     width: 700px;
   }
-}
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
 }
 .footer {
   position: absolute;

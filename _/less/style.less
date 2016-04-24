@@ -1,9 +1,34 @@
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@lightgray: #819090;
+@gray: #708284;
+@mediumgray: #536870;
+@darkgray: #475B62;
+@darkblue: #0A2933;
+@darkerblue: #042029;
+@paleryellow: #FCF4DC;
+@paleyellow: #EAE3CB;
+@yellow: #A57706;
+@orange: #BD3613;
+@red: #D11C24;
+@pink: #C61C6F;
+@purple: #595AB7;
+@blue: #2176C7;
+@cyan: #259286;
+@green: #738A05;
 @base: #f938ab;
 @nice-blue: #5B83AD;
 @light-blue: @nice-blue + #111;
 
+@font-primary: Merriweather, serif;
+@font-secondary: Bree Serif, serif;
+
+@default-border-radius: 10px;
+
 html {
     height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -11,7 +36,31 @@ body {
     /*color: #fff;*/
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
+h1 {
+    font-size: 2.2rem;
+    color: lighten(@darkblue, 25);
+    margin-bottom: .4rem;
+    border-bottom: 1px solid @lightgray;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin: 20px 0 0 0;
+    color: @orange;
+}
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 60%;
+    color: @orange;
+}
+
 
 a {
     color: #fff;
@@ -96,67 +145,43 @@ a {
         }
     }
 
-    .active {
-
-        a {
+    & > .active {
+        & > a {
+            &,
             &:focus,
             &:hover {
-        color: #fff;
-        border-bottom-color: #fff;
+                color: #fff;
+                border-bottom-color: #fff;
             }
         }
     }
 }
 
-
-
-
-
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-    color: #fff;
-    border-bottom-color: #fff;
-}
-
 @media (min-width: 768px) {
-    .masthead-brand {
-        float: left;
-    }
+    .masthead {
+        &-brand {
+            float: left;
+        }
 
-    .masthead-nav {
-        float: right;
+        &-nav {
+            float: right;
+        }
     }
 }
-
-
-/*
- * Cover
- */
 
 .cover {
     padding: 0 20px;
+
+    .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+    }
 }
-
-.cover .btn-lg {
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-
-/*
- * Footer
- */
 
 .mastfoot {
     color: #999; /* IE8 proofing */
     color: rgba(255,255,255,.5);
 }
-
-
-/*
- * Affix and center
- */
 
 @media (min-width: 768px) {
     /* Pull out the header and footer */
@@ -189,15 +214,7 @@ a {
     }
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
 
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
 
 .footer {
     position: absolute;
