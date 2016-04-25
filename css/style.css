@@ -13,8 +13,12 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+.carousel-caption h2 {
+  font-size: 3.5rem;
+  color: #1f7f9e;
+}
 h1 {
-  font-size: 2.2rem;
+  font-size: 10rem;
   color: #1f7f9e;
   margin-bottom: .4rem;
   border-bottom: 1px solid #819090;
