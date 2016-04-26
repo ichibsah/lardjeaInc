@@ -1,1 +1,10 @@
-node_modules/
+node_modules 
+npm-debug.log 
+.DS_Store 
+.env 
+Dockerfile 
+docker-compose.yml 
+.sass-cache 
+tmp 
+'node_modules' 
+'npm-debug.log' 
