@@ -1,6 +1,5 @@
 # lardjea Inc
 
-[:globe_with_meridians:] (http://lardjea.xyz) Website
 [:globe_with_meridians: Website] (http://lardjea.xyz)
 
 
