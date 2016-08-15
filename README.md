@@ -1,1 +1,4 @@
 "# lardjeaInc" 
+grunt
+
+live-server
