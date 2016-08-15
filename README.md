@@ -1,4 +1,8 @@
-"# lardjeaInc"
+# lardjeaInc
+[![Website](http://lardjea.xyz)](http://lardjea.xyz)
+
+
+# Install
 
 ```
 npm install
