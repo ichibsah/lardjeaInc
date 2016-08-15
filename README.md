@@ -1,5 +1,5 @@
-# lardjeaInc
-[![Website](http://lardjea.xyz)](http://lardjea.xyz)
+# lardjea Inc
+[![:globe_with_meridians:](http://lardjea.xyz)](http://lardjea.xyz)
 
 
 # Install
